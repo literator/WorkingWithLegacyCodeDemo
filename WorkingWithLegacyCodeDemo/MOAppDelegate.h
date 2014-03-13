@@ -1,11 +1,3 @@
-//
-//  MOAppDelegate.h
-//  WorkingWithLegacyCodeDemo
-//
-//  Created by Maciej Oczko on 13.03.2014.
-//  Copyright (c) 2014 Maciej Oczko. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @interface MOAppDelegate : UIResponder <UIApplicationDelegate>

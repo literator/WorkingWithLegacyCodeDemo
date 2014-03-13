@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */; };
+		810865C31A03CA974E3E82C5 /* MOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086A4ACF4A34D161C120D1 /* MOMainViewController.m */; };
+		81086A969210B9B8D7CD1C84 /* MOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810861FCFEC52E946E96C60D /* MOListViewController.m */; };
+		81086ED2C258C0F7DE618936 /* MOMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810865ACC56972003F919A83 /* MOMainView.m */; };
+		92E4A7FF5A7948D793D4B536 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48E9C80B4FC4062B5E1D6D7 /* libPods.a */; };
+		A15DD04618D397F500E7E9B1 /* MOContactDataGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DD04518D397F500E7E9B1 /* MOContactDataGroup.m */; };
+		A15DD04918D397F600E7E9B1 /* MOContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = A15DD04818D397F600E7E9B1 /* MOContactData.m */; };
 		A1B932AD18D24B7300C255C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B932AC18D24B7300C255C4 /* Foundation.framework */; };
 		A1B932AF18D24B7300C255C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B932AE18D24B7300C255C4 /* CoreGraphics.framework */; };
 		A1B932B118D24B7300C255C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B932B018D24B7300C255C4 /* UIKit.framework */; };
@@ -21,7 +28,7 @@
 		A1B932CD18D24B7300C255C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B932B018D24B7300C255C4 /* UIKit.framework */; };
 		A1B932CE18D24B7300C255C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B932B218D24B7300C255C4 /* CoreData.framework */; };
 		A1B932D618D24B7300C255C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B932D418D24B7300C255C4 /* InfoPlist.strings */; };
-		A1B932D818D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B932D718D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests.m */; };
+		C36BAD03DF064832AA054DCC /* libPods-WorkingWithLegacyCodeDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E28F281B064C403091B28055 /* libPods-WorkingWithLegacyCodeDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		784193EA69054297BAFD70BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		810861FCFEC52E946E96C60D /* MOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOListViewController.m; sourceTree = "<group>"; };
+		810863760C4706286D7E18A7 /* MOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOListViewController.h; sourceTree = "<group>"; };
+		810865ACC56972003F919A83 /* MOMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainView.m; sourceTree = "<group>"; };
+		810865D1F8BD600D98E1563E /* MOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainViewController.h; sourceTree = "<group>"; };
+		810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSimpleTableViewFetchedResultsControllerDelegate.h; sourceTree = "<group>"; };
+		81086A4ACF4A34D161C120D1 /* MOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainViewController.m; sourceTree = "<group>"; };
+		81086AD3DD6758F452F6E368 /* MOMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainView.h; sourceTree = "<group>"; };
+		81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSimpleTableViewFetchedResultsControllerDelegate.m; sourceTree = "<group>"; };
+		A15DD04418D397F500E7E9B1 /* MOContactDataGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactDataGroup.h; sourceTree = "<group>"; };
+		A15DD04518D397F500E7E9B1 /* MOContactDataGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactDataGroup.m; sourceTree = "<group>"; };
+		A15DD04718D397F600E7E9B1 /* MOContactData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactData.h; sourceTree = "<group>"; };
+		A15DD04818D397F600E7E9B1 /* MOContactData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactData.m; sourceTree = "<group>"; };
 		A1B932A918D24B7300C255C4 /* WorkingWithLegacyCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithLegacyCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B932AC18D24B7300C255C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B932AE18D24B7300C255C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +72,9 @@
 		A1B932CA18D24B7300C255C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A1B932D318D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkingWithLegacyCodeDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A1B932D518D24B7300C255C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1B932D718D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkingWithLegacyCodeDemoTests.m; sourceTree = "<group>"; };
+		D48E9C80B4FC4062B5E1D6D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F281B064C403091B28055 /* libPods-WorkingWithLegacyCodeDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkingWithLegacyCodeDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F820A537370D496E9107E500 /* Pods-WorkingWithLegacyCodeDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingWithLegacyCodeDemoTests.xcconfig"; path = "Pods/Pods-WorkingWithLegacyCodeDemoTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 				A1B932B318D24B7300C255C4 /* CoreData.framework in Frameworks */,
 				A1B932B118D24B7300C255C4 /* UIKit.framework in Frameworks */,
 				A1B932AD18D24B7300C255C4 /* Foundation.framework in Frameworks */,
+				92E4A7FF5A7948D793D4B536 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +98,63 @@
 				A1B932CE18D24B7300C255C4 /* CoreData.framework in Frameworks */,
 				A1B932CD18D24B7300C255C4 /* UIKit.framework in Frameworks */,
 				A1B932CC18D24B7300C255C4 /* Foundation.framework in Frameworks */,
+				C36BAD03DF064832AA054DCC /* libPods-WorkingWithLegacyCodeDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810862254D737942778E6F6D /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				810865D1F8BD600D98E1563E /* MOMainViewController.h */,
+				810865ACC56972003F919A83 /* MOMainView.m */,
+				81086A4ACF4A34D161C120D1 /* MOMainViewController.m */,
+				81086AD3DD6758F452F6E368 /* MOMainView.h */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		81086284BA41F6A34D25B8E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81086BEA37097D50155B46EB /* Entities */,
+				81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */,
+				810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81086BEA37097D50155B46EB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A15DD04718D397F600E7E9B1 /* MOContactData.h */,
+				A15DD04818D397F600E7E9B1 /* MOContactData.m */,
+				A15DD04418D397F500E7E9B1 /* MOContactDataGroup.h */,
+				A15DD04518D397F500E7E9B1 /* MOContactDataGroup.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		81086CAE5BFBD8004B1890D7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				810862254D737942778E6F6D /* MainController */,
+				81086EA8DC21C9B6BE67322B /* MOListViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		81086EA8DC21C9B6BE67322B /* MOListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				810861FCFEC52E946E96C60D /* MOListViewController.m */,
+				810863760C4706286D7E18A7 /* MOListViewController.h */,
+			);
+			path = MOListViewController;
+			sourceTree = "<group>";
+		};
 		A1B932A018D24B7300C255C4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +162,8 @@
 				A1B932D118D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests */,
 				A1B932AB18D24B7300C255C4 /* Frameworks */,
 				A1B932AA18D24B7300C255C4 /* Products */,
+				784193EA69054297BAFD70BF /* Pods.xcconfig */,
+				F820A537370D496E9107E500 /* Pods-WorkingWithLegacyCodeDemoTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +184,8 @@
 				A1B932B018D24B7300C255C4 /* UIKit.framework */,
 				A1B932B218D24B7300C255C4 /* CoreData.framework */,
 				A1B932CA18D24B7300C255C4 /* XCTest.framework */,
+				D48E9C80B4FC4062B5E1D6D7 /* libPods.a */,
+				E28F281B064C403091B28055 /* libPods-WorkingWithLegacyCodeDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +198,8 @@
 				A1B932C318D24B7300C255C4 /* Images.xcassets */,
 				A1B932C018D24B7300C255C4 /* WorkingWithLegacyCodeDemo.xcdatamodeld */,
 				A1B932B518D24B7300C255C4 /* Supporting Files */,
+				81086CAE5BFBD8004B1890D7 /* UI */,
+				81086284BA41F6A34D25B8E6 /* Model */,
 			);
 			path = WorkingWithLegacyCodeDemo;
 			sourceTree = "<group>";
@@ -138,7 +218,6 @@
 		A1B932D118D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1B932D718D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests.m */,
 				A1B932D218D24B7300C255C4 /* Supporting Files */,
 			);
 			path = WorkingWithLegacyCodeDemoTests;
@@ -160,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B932DB18D24B7300C255C4 /* Build configuration list for PBXNativeTarget "WorkingWithLegacyCodeDemo" */;
 			buildPhases = (
+				44EDA434BF644AFEB330C4F5 /* Check Pods Manifest.lock */,
 				A1B932A518D24B7300C255C4 /* Sources */,
 				A1B932A618D24B7300C255C4 /* Frameworks */,
 				A1B932A718D24B7300C255C4 /* Resources */,
+				B0992DA7066543C686DDA4DF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B932DE18D24B7300C255C4 /* Build configuration list for PBXNativeTarget "WorkingWithLegacyCodeDemoTests" */;
 			buildPhases = (
+				E74431957703467698C557F7 /* Check Pods Manifest.lock */,
 				A1B932C518D24B7300C255C4 /* Sources */,
 				A1B932C618D24B7300C255C4 /* Frameworks */,
 				A1B932C718D24B7300C255C4 /* Resources */,
+				91B1ABA744C3485C9439FC75 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +327,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44EDA434BF644AFEB330C4F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91B1ABA744C3485C9439FC75 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WorkingWithLegacyCodeDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0992DA7066543C686DDA4DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74431957703467698C557F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1B932A518D24B7300C255C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +398,12 @@
 				A1B932BF18D24B7300C255C4 /* MOAppDelegate.m in Sources */,
 				A1B932C218D24B7300C255C4 /* WorkingWithLegacyCodeDemo.xcdatamodeld in Sources */,
 				A1B932BB18D24B7300C255C4 /* main.m in Sources */,
+				81086ED2C258C0F7DE618936 /* MOMainView.m in Sources */,
+				A15DD04618D397F500E7E9B1 /* MOContactDataGroup.m in Sources */,
+				A15DD04918D397F600E7E9B1 /* MOContactData.m in Sources */,
+				810865C31A03CA974E3E82C5 /* MOMainViewController.m in Sources */,
+				81086A969210B9B8D7CD1C84 /* MOListViewController.m in Sources */,
+				810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B932D818D24B7300C255C4 /* WorkingWithLegacyCodeDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -367,32 +518,41 @@
 		};
 		A1B932DC18D24B7300C255C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784193EA69054297BAFD70BF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkingWithLegacyCodeDemo/WorkingWithLegacyCodeDemo-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "WorkingWithLegacyCodeDemo/WorkingWithLegacyCodeDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		A1B932DD18D24B7300C255C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784193EA69054297BAFD70BF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkingWithLegacyCodeDemo/WorkingWithLegacyCodeDemo-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "WorkingWithLegacyCodeDemo/WorkingWithLegacyCodeDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		A1B932DF18D24B7300C255C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F820A537370D496E9107E500 /* Pods-WorkingWithLegacyCodeDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkingWithLegacyCodeDemo.app/WorkingWithLegacyCodeDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -407,6 +567,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "WorkingWithLegacyCodeDemoTests/WorkingWithLegacyCodeDemoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -415,6 +580,7 @@
 		};
 		A1B932E018D24B7300C255C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F820A537370D496E9107E500 /* Pods-WorkingWithLegacyCodeDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkingWithLegacyCodeDemo.app/WorkingWithLegacyCodeDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -425,6 +591,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkingWithLegacyCodeDemo/WorkingWithLegacyCodeDemo-Prefix.pch";
 				INFOPLIST_FILE = "WorkingWithLegacyCodeDemoTests/WorkingWithLegacyCodeDemoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -450,6 +621,7 @@
 				A1B932DD18D24B7300C255C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1B932DE18D24B7300C255C4 /* Build configuration list for PBXNativeTarget "WorkingWithLegacyCodeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +630,7 @@
 				A1B932E018D24B7300C255C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

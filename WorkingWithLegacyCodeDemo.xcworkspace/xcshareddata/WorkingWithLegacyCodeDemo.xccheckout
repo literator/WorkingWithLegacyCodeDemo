@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65275831-9E1B-4C9B-8F33-C2341CC4613F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WorkingWithLegacyCodeDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BAE3FC04-DA74-4170-88D8-B2DC3647BC87</key>
+		<string>ssh://github.com/literator/WorkingWithLegacyCodeDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WorkingWithLegacyCodeDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BAE3FC04-DA74-4170-88D8-B2DC3647BC87</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/literator/WorkingWithLegacyCodeDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BAE3FC04-DA74-4170-88D8-B2DC3647BC87</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BAE3FC04-DA74-4170-88D8-B2DC3647BC87</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WorkingWithLegacyCodeDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
