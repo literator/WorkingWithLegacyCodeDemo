@@ -11,6 +11,7 @@
 		810861FFBC7E22B811D7FB87 /* MOManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B6A762163D64F2F5C43 /* MOManagedObjectContext.m */; };
 		81086360C8F584B983AC00BF /* MOContactManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867424EF1CAC1A8811AF1 /* MOContactManagerSpec.m */; };
 		810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */; };
+		810865B49391D7C8256AB298 /* MOSpecHelperNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810869F3257E0859F68E4015 /* MOSpecHelperNetworkingManager.m */; };
 		810865C31A03CA974E3E82C5 /* MOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086A4ACF4A34D161C120D1 /* MOMainViewController.m */; };
 		8108681210FFC60D176FBE89 /* MOContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108602E640F04E1CFC2A2B1 /* MOContactManager.m */; };
 		81086874F7096C483DB673EC /* MONetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108692FE80990BAF75321FA /* MONetworkingManager.m */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		784193EA69054297BAFD70BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8108602E640F04E1CFC2A2B1 /* MOContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactManager.m; sourceTree = "<group>"; };
+		810860DD5A5F8116AD898387 /* MOSpecHelperNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSpecHelperNetworkingManager.h; sourceTree = "<group>"; };
 		810860DE5389913AD0F644BF /* MONetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONetworking.h; sourceTree = "<group>"; };
 		8108610C4343F2997D05A6BB /* MOCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCoreDataStack.m; sourceTree = "<group>"; };
 		8108613BC8D152CDEE3119F8 /* MOContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactManager.h; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		810868546C4EE86FCA51E136 /* MOManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOManagedObjectContext.h; sourceTree = "<group>"; };
 		810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSimpleTableViewFetchedResultsControllerDelegate.h; sourceTree = "<group>"; };
 		8108692FE80990BAF75321FA /* MONetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONetworkingManager.m; sourceTree = "<group>"; };
+		810869F3257E0859F68E4015 /* MOSpecHelperNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSpecHelperNetworkingManager.m; sourceTree = "<group>"; };
 		81086A4ACF4A34D161C120D1 /* MOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainViewController.m; sourceTree = "<group>"; };
 		81086AD3DD6758F452F6E368 /* MOMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainView.h; sourceTree = "<group>"; };
 		81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSimpleTableViewFetchedResultsControllerDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 			children = (
 				810867A3D20E00CC24FF7DCF /* MOSpecHelperCoreDataStack.m */,
 				8108635BEF20EA4D334726FB /* MOSpecHelperCoreDataStack.h */,
+				810869F3257E0859F68E4015 /* MOSpecHelperNetworkingManager.m */,
+				810860DD5A5F8116AD898387 /* MOSpecHelperNetworkingManager.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 			files = (
 				81086360C8F584B983AC00BF /* MOContactManagerSpec.m in Sources */,
 				81086EF4C546D71F2111D740 /* MOSpecHelperCoreDataStack.m in Sources */,
+				810865B49391D7C8256AB298 /* MOSpecHelperNetworkingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +650,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -668,6 +675,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

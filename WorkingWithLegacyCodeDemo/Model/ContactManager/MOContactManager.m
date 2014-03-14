@@ -13,7 +13,8 @@
 
 @implementation MOContactManager
 
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack networkingManager:(id <MONetworking>)networkingManager {
+- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack
+                    networkingManager:(id <MONetworking>)networkingManager {
     self = [super init];
     if (self) {
         _coreDataStack = coreDataStack;
