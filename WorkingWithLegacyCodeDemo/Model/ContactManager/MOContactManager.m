@@ -1,9 +1,10 @@
 #import "MOContactManager.h"
 #import "MOCoreDataStack.h"
 #import "MOContactData.h"
-#import "NSManagedObjectContext+PLCoreDataUtils.h"
 #import "MOContactDataGroup.h"
 #import "MONetworking.h"
+#import "NSManagedObject+MOUtilities.h"
+#import "MOContactData+MOUtilities.h"
 
 
 @implementation MOContactManager
@@ -30,17 +31,17 @@
 
 - (void)saveDataToModel:(id)responseObject {
     NSArray *contactsData = responseObject[@"response"];
-    NSManagedObjectContext *context = self.coreDataStack.mainContext;
+    NSManagedObjectContext *context = self.coreDataStack.backgroundContext;
 
-    MOContactDataGroup *dataGroup = (MOContactDataGroup *) [context insertNewEntityWithName:NSStringFromClass([MOContactDataGroup class])];
+    MOContactDataGroup *dataGroup = [MOContactDataGroup insertEntityInContext:context];
     dataGroup.fetchDate = [NSDate timeIntervalSinceReferenceDate];
+
     for (NSDictionary *data in contactsData) {
-        MOContactData *contactData = (MOContactData *) [context insertNewEntityWithName:NSStringFromClass([MOContactData class])];
-        contactData.name = data[@"name"];
-        contactData.surname = data[@"surname"];
-        contactData.role = [data[@"role"] intValue];
+        MOContactData *contactData = [MOContactData insertEntityInContext:context];
+        [contactData loadData:data];
         contactData.group = dataGroup;
     }
+
     NSError *error = nil;
     if (![context save:&error]) {
         NSLog(@"error = %@", [error localizedDescription]);
