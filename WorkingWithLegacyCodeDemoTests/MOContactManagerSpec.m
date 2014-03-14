@@ -1,6 +1,8 @@
 #import <Kiwi/Kiwi.h>
 
 #import "MOContactManager.h"
+#import "MOCoreDataStack.h"
+#import "MOSpecHelperCoreDataStack.h"
 
 SPEC_BEGIN(MOContactManagerSpec)
 
@@ -8,11 +10,13 @@ describe(@"MOContactManager", ^{
     __block MOContactManager *manager;
 
     beforeEach(^{
-        manager = [[MOContactManager alloc] init];
+        MOCoreDataStack *coreDataStack = [[MOSpecHelperCoreDataStack alloc] init];
+
+        manager = [[MOContactManager alloc] initWithCoreDataStack:coreDataStack];
     });
 
-    describe(@"", ^{
-        
+    describe(@"saving data to model", ^{
+
     });
 });
 
