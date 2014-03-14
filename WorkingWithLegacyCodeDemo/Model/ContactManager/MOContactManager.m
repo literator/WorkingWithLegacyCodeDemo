@@ -3,18 +3,21 @@
 #import "MOContactData.h"
 #import "NSManagedObjectContext+PLCoreDataUtils.h"
 #import "MOContactDataGroup.h"
+#import "MONetworking.h"
 
 
 @interface MOContactManager ()
 @property(nonatomic, readonly) MOCoreDataStack *coreDataStack;
+@property(nonatomic, readonly) id <MONetworking> networkingManager;
 @end
 
 @implementation MOContactManager
 
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack {
+- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack networkingManager:(id <MONetworking>)networkingManager {
     self = [super init];
     if (self) {
         _coreDataStack = coreDataStack;
+        _networkingManager = networkingManager;
     }
 
     return self;

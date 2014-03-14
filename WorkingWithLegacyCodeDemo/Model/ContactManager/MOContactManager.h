@@ -5,7 +5,8 @@
 
 
 @interface MOContactManager : NSObject <MOManager>
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack;
+- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack networkingManager:(id <MONetworking>)networkingManager;
+
 
 - (void)saveDataToModel:(id)responseObject;
 @end

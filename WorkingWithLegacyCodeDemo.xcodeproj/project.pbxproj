@@ -13,6 +13,7 @@
 		810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */; };
 		810865C31A03CA974E3E82C5 /* MOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086A4ACF4A34D161C120D1 /* MOMainViewController.m */; };
 		8108681210FFC60D176FBE89 /* MOContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108602E640F04E1CFC2A2B1 /* MOContactManager.m */; };
+		81086874F7096C483DB673EC /* MONetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108692FE80990BAF75321FA /* MONetworkingManager.m */; };
 		81086A969210B9B8D7CD1C84 /* MOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810861FCFEC52E946E96C60D /* MOListViewController.m */; };
 		81086ED2C258C0F7DE618936 /* MOMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810865ACC56972003F919A83 /* MOMainView.m */; };
 		81086EF4C546D71F2111D740 /* MOSpecHelperCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867A3D20E00CC24FF7DCF /* MOSpecHelperCoreDataStack.m */; };
@@ -49,11 +50,13 @@
 /* Begin PBXFileReference section */
 		784193EA69054297BAFD70BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8108602E640F04E1CFC2A2B1 /* MOContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactManager.m; sourceTree = "<group>"; };
+		810860DE5389913AD0F644BF /* MONetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONetworking.h; sourceTree = "<group>"; };
 		8108610C4343F2997D05A6BB /* MOCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCoreDataStack.m; sourceTree = "<group>"; };
 		8108613BC8D152CDEE3119F8 /* MOContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactManager.h; sourceTree = "<group>"; };
 		810861FCFEC52E946E96C60D /* MOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOListViewController.m; sourceTree = "<group>"; };
 		8108635BEF20EA4D334726FB /* MOSpecHelperCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSpecHelperCoreDataStack.h; sourceTree = "<group>"; };
 		810863760C4706286D7E18A7 /* MOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOListViewController.h; sourceTree = "<group>"; };
+		81086403C8D91C0CC3C888FA /* MONetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONetworkingManager.h; sourceTree = "<group>"; };
 		810864D9365F03E09FC6F441 /* MOCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCoreDataStack.h; sourceTree = "<group>"; };
 		810865ACC56972003F919A83 /* MOMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainView.m; sourceTree = "<group>"; };
 		810865D1F8BD600D98E1563E /* MOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainViewController.h; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		810867A3D20E00CC24FF7DCF /* MOSpecHelperCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSpecHelperCoreDataStack.m; sourceTree = "<group>"; };
 		810868546C4EE86FCA51E136 /* MOManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOManagedObjectContext.h; sourceTree = "<group>"; };
 		810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSimpleTableViewFetchedResultsControllerDelegate.h; sourceTree = "<group>"; };
+		8108692FE80990BAF75321FA /* MONetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONetworkingManager.m; sourceTree = "<group>"; };
 		81086A4ACF4A34D161C120D1 /* MOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainViewController.m; sourceTree = "<group>"; };
 		81086AD3DD6758F452F6E368 /* MOMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainView.h; sourceTree = "<group>"; };
 		81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSimpleTableViewFetchedResultsControllerDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */,
 				8108655AF62137624FD46FC8 /* CoreDataStack */,
 				81086C256F5474CB02BF9CCA /* ContactManager */,
+				81086BCAD0D75A83E0DE3C03 /* Networking */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +157,16 @@
 				810868546C4EE86FCA51E136 /* MOManagedObjectContext.h */,
 			);
 			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		81086BCAD0D75A83E0DE3C03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				810860DE5389913AD0F644BF /* MONetworking.h */,
+				8108692FE80990BAF75321FA /* MONetworkingManager.m */,
+				81086403C8D91C0CC3C888FA /* MONetworkingManager.h */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		81086BEA37097D50155B46EB /* Entities */ = {
@@ -456,6 +471,7 @@
 				81086191901113D276CAC1E5 /* MOCoreDataStack.m in Sources */,
 				810861FFBC7E22B811D7FB87 /* MOManagedObjectContext.m in Sources */,
 				8108681210FFC60D176FBE89 /* MOContactManager.m in Sources */,
+				81086874F7096C483DB673EC /* MONetworkingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
