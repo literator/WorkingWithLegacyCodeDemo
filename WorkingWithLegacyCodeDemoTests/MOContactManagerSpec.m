@@ -20,7 +20,7 @@ describe(@"MOContactManager", ^{
 
     describe(@"saving data to model", ^{
 
-        beforeAll(^{
+        beforeEach(^{
 
             NSDictionary *responseObject = @{
                     @"response" : @[
@@ -42,8 +42,8 @@ describe(@"MOContactManager", ^{
         });
 
         it(@"should contain one Contact Data object", ^{
-            NSArray *contactGroups = [coreDataStack.mainContext fetchObjectsWithEntityName:NSStringFromClass([MOContactData class]) predicate:nil];
-            [[contactGroups should] haveCountOf:1];
+            NSArray *contacts = [coreDataStack.mainContext fetchObjectsWithEntityName:NSStringFromClass([MOContactData class]) predicate:nil];
+            [[contacts should] haveCountOf:1];
         });
 
     });
