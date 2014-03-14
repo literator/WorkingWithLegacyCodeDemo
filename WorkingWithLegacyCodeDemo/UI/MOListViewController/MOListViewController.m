@@ -1,17 +1,27 @@
 #import <PLCoreDataUtils/NSManagedObjectContext+PLCoreDataUtils.h>
 #import "MOListViewController.h"
 #import "MOContactDataGroup.h"
-#import "MOAppDelegate.h"
 #import "MOSimpleTableViewFetchedResultsControllerDelegate.h"
 #import "MOContactData.h"
+#import "MOCoreDataStack.h"
 
 @interface MOListViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property(nonatomic, readonly) MOCoreDataStack* coreDataStack;
 @end
 
 @implementation MOListViewController {
 
+}
+
+- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack {
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        _coreDataStack = coreDataStack;
+    }
+
+    return self;
 }
 
 - (void)viewDidLoad {
@@ -36,8 +46,7 @@
 }
 
 - (void)setupFetchedResultsController {
-    MOAppDelegate *appDelegate = (MOAppDelegate *) [UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *context = appDelegate.managedObjectContext;
+    NSManagedObjectContext *context = self.coreDataStack.mainContext;
 
     NSArray *groups = [context fetchObjectsWithEntityName:NSStringFromClass([MOContactDataGroup class])
                                                 predicate:nil

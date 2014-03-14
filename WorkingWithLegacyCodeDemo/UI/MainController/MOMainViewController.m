@@ -2,19 +2,22 @@
 #import "MOMainView.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "NSManagedObjectContext+PLCoreDataUtils.h"
+#import "MOCoreDataStack.h"
 #import "MOContactDataGroup.h"
 #import "MOListViewController.h"
-#import "MOAppDelegate.h"
 #import "MOContactData.h"
+
+@interface MOMainViewController ()
+@property(nonatomic, readonly) MOCoreDataStack* coreDataStack;
+@end
 
 @implementation MOMainViewController {
 
 }
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack {
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = @"Main View";
+        _coreDataStack = coreDataStack;
     }
 
     return self;
@@ -30,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Main View";
     [self.castView.viewLastButton addTarget:self action:@selector(didTapViewButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.castView.downloadNewButton addTarget:self action:@selector(didTapDownloadButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view setNeedsUpdateConstraints];
@@ -45,7 +49,7 @@
 }
 
 - (void)showDetails {
-    MOListViewController *listViewController = [[MOListViewController alloc] initWithNibName:nil bundle:nil];
+    MOListViewController *listViewController = [[MOListViewController alloc] initWithCoreDataStack:self.coreDataStack];
     [self.navigationController pushViewController:listViewController animated:YES];
 }
 
@@ -63,8 +67,7 @@
 
 - (void)saveDataToModel:(id)responseObject {
     NSArray *contactsData = responseObject[@"response"];
-    MOAppDelegate *appDelegate = (MOAppDelegate *) [UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *context = appDelegate.managedObjectContext;
+    NSManagedObjectContext *context = self.coreDataStack.mainContext;
 
     MOContactDataGroup *dataGroup = (MOContactDataGroup *) [context insertNewEntityWithName:NSStringFromClass([MOContactDataGroup class])];
     dataGroup.fetchDate = [NSDate timeIntervalSinceReferenceDate];
@@ -75,7 +78,10 @@
         contactData.role = [data[@"role"] intValue];
         contactData.group = dataGroup;
     }
-    [appDelegate saveContext];
+    NSError *error = nil;
+    if(![context save:&error]) {
+        NSLog(@"error = %@", [error localizedDescription]);
+    }
 }
 
 @end
