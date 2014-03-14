@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		81086191901113D276CAC1E5 /* MOCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108610C4343F2997D05A6BB /* MOCoreDataStack.m */; };
 		810861FFBC7E22B811D7FB87 /* MOManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B6A762163D64F2F5C43 /* MOManagedObjectContext.m */; };
+		81086360C8F584B983AC00BF /* MOContactManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867424EF1CAC1A8811AF1 /* MOContactManagerSpec.m */; };
 		810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */; };
 		810865C31A03CA974E3E82C5 /* MOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086A4ACF4A34D161C120D1 /* MOMainViewController.m */; };
+		8108681210FFC60D176FBE89 /* MOContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108602E640F04E1CFC2A2B1 /* MOContactManager.m */; };
 		81086A969210B9B8D7CD1C84 /* MOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810861FCFEC52E946E96C60D /* MOListViewController.m */; };
 		81086ED2C258C0F7DE618936 /* MOMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810865ACC56972003F919A83 /* MOMainView.m */; };
 		92E4A7FF5A7948D793D4B536 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48E9C80B4FC4062B5E1D6D7 /* libPods.a */; };
@@ -45,18 +47,22 @@
 
 /* Begin PBXFileReference section */
 		784193EA69054297BAFD70BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8108602E640F04E1CFC2A2B1 /* MOContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactManager.m; sourceTree = "<group>"; };
 		8108610C4343F2997D05A6BB /* MOCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCoreDataStack.m; sourceTree = "<group>"; };
+		8108613BC8D152CDEE3119F8 /* MOContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactManager.h; sourceTree = "<group>"; };
 		810861FCFEC52E946E96C60D /* MOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOListViewController.m; sourceTree = "<group>"; };
 		810863760C4706286D7E18A7 /* MOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOListViewController.h; sourceTree = "<group>"; };
 		810864D9365F03E09FC6F441 /* MOCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCoreDataStack.h; sourceTree = "<group>"; };
 		810865ACC56972003F919A83 /* MOMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainView.m; sourceTree = "<group>"; };
 		810865D1F8BD600D98E1563E /* MOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainViewController.h; sourceTree = "<group>"; };
+		810867424EF1CAC1A8811AF1 /* MOContactManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactManagerSpec.m; sourceTree = "<group>"; };
 		810868546C4EE86FCA51E136 /* MOManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOManagedObjectContext.h; sourceTree = "<group>"; };
 		810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSimpleTableViewFetchedResultsControllerDelegate.h; sourceTree = "<group>"; };
 		81086A4ACF4A34D161C120D1 /* MOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMainViewController.m; sourceTree = "<group>"; };
 		81086AD3DD6758F452F6E368 /* MOMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMainView.h; sourceTree = "<group>"; };
 		81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSimpleTableViewFetchedResultsControllerDelegate.m; sourceTree = "<group>"; };
 		81086B6A762163D64F2F5C43 /* MOManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOManagedObjectContext.m; sourceTree = "<group>"; };
+		81086EF28475E6CD05418790 /* MOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOManager.h; sourceTree = "<group>"; };
 		A15DD04418D397F500E7E9B1 /* MOContactDataGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactDataGroup.h; sourceTree = "<group>"; };
 		A15DD04518D397F500E7E9B1 /* MOContactDataGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOContactDataGroup.m; sourceTree = "<group>"; };
 		A15DD04718D397F600E7E9B1 /* MOContactData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOContactData.h; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 				81086B5A6BC96BCBC9CE8003 /* MOSimpleTableViewFetchedResultsControllerDelegate.m */,
 				810868C89E2D01A62B65A897 /* MOSimpleTableViewFetchedResultsControllerDelegate.h */,
 				8108655AF62137624FD46FC8 /* CoreDataStack */,
+				81086C256F5474CB02BF9CCA /* ContactManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +160,16 @@
 				A15DD04518D397F500E7E9B1 /* MOContactDataGroup.m */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		81086C256F5474CB02BF9CCA /* ContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				8108602E640F04E1CFC2A2B1 /* MOContactManager.m */,
+				8108613BC8D152CDEE3119F8 /* MOContactManager.h */,
+				81086EF28475E6CD05418790 /* MOManager.h */,
+			);
+			path = ContactManager;
 			sourceTree = "<group>";
 		};
 		81086CAE5BFBD8004B1890D7 /* UI */ = {
@@ -237,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B932D218D24B7300C255C4 /* Supporting Files */,
+				810867424EF1CAC1A8811AF1 /* MOContactManagerSpec.m */,
 			);
 			path = WorkingWithLegacyCodeDemoTests;
 			sourceTree = "<group>";
@@ -424,6 +442,7 @@
 				810865090A9AAC1BD93D64B2 /* MOSimpleTableViewFetchedResultsControllerDelegate.m in Sources */,
 				81086191901113D276CAC1E5 /* MOCoreDataStack.m in Sources */,
 				810861FFBC7E22B811D7FB87 /* MOManagedObjectContext.m in Sources */,
+				8108681210FFC60D176FBE89 /* MOContactManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81086360C8F584B983AC00BF /* MOContactManagerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
