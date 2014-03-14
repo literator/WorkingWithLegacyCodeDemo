@@ -25,7 +25,12 @@
 }
 
 - (void)updateData {
-
+    [self.networkingManager performCallToEndpoint:@"contacts"
+                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                              [self saveDataToModel:responseObject];
+                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error = %@", [error localizedDescription]);
+    }];
 }
 
 - (void)saveDataToModel:(id)responseObject {
