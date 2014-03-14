@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
-@class MOCoreDataStack;
+@protocol MOManager;
 
 @interface MOMainViewController : UIViewController
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack;
+- (instancetype)initWithManager:(id <MOManager>)manager;
 @end

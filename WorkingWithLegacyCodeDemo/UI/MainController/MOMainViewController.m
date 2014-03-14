@@ -1,23 +1,19 @@
 #import "MOMainViewController.h"
 #import "MOMainView.h"
-#import "AFHTTPRequestOperationManager.h"
-#import "NSManagedObjectContext+PLCoreDataUtils.h"
-#import "MOCoreDataStack.h"
-#import "MOContactDataGroup.h"
 #import "MOListViewController.h"
-#import "MOContactData.h"
+#import "MOManager.h"
 
 @interface MOMainViewController ()
-@property(nonatomic, readonly) MOCoreDataStack* coreDataStack;
+@property(nonatomic, readonly) id <MOManager> manager;
 @end
 
 @implementation MOMainViewController {
 
 }
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack {
+- (instancetype)initWithManager:(id <MOManager>)manager {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        _coreDataStack = coreDataStack;
+        _manager = manager;
     }
 
     return self;
@@ -40,7 +36,7 @@
 }
 
 - (void)didTapDownloadButton:(UIButton *)button {
-    [self updateData];
+    [self.manager updateData];
     [self showDetails];
 }
 
@@ -49,39 +45,8 @@
 }
 
 - (void)showDetails {
-    MOListViewController *listViewController = [[MOListViewController alloc] initWithCoreDataStack:self.coreDataStack];
+    MOListViewController *listViewController = [[MOListViewController alloc] initWithManager:self.manager];
     [self.navigationController pushViewController:listViewController animated:YES];
-}
-
-- (void)updateData {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://localhost:8080/contacts"
-      parameters:nil
-         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-             [self saveDataToModel:responseObject];
-         }
-         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-             NSLog(@"error = %@", [error localizedDescription]);
-         }];
-}
-
-- (void)saveDataToModel:(id)responseObject {
-    NSArray *contactsData = responseObject[@"response"];
-    NSManagedObjectContext *context = self.coreDataStack.mainContext;
-
-    MOContactDataGroup *dataGroup = (MOContactDataGroup *) [context insertNewEntityWithName:NSStringFromClass([MOContactDataGroup class])];
-    dataGroup.fetchDate = [NSDate timeIntervalSinceReferenceDate];
-    for (NSDictionary *data in contactsData) {
-        MOContactData *contactData = (MOContactData *) [context insertNewEntityWithName:NSStringFromClass([MOContactData class])];
-        contactData.name = data[@"name"];
-        contactData.surname = data[@"surname"];
-        contactData.role = [data[@"role"] intValue];
-        contactData.group = dataGroup;
-    }
-    NSError *error = nil;
-    if(![context save:&error]) {
-        NSLog(@"error = %@", [error localizedDescription]);
-    }
 }
 
 @end

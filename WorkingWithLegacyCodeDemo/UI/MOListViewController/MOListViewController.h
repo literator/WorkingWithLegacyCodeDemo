@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
-@class MOCoreDataStack;
+@protocol MOManager;
 
 @interface MOListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack;
+- (instancetype)initWithManager:(id <MOManager>)manager;
 
 @end

@@ -6,11 +6,6 @@
 #import "MONetworking.h"
 
 
-@interface MOContactManager ()
-@property(nonatomic, readonly) MOCoreDataStack *coreDataStack;
-@property(nonatomic, readonly) id <MONetworking> networkingManager;
-@end
-
 @implementation MOContactManager
 
 - (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack

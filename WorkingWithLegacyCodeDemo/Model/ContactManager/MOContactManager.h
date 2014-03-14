@@ -5,6 +5,9 @@
 @protocol MONetworking;
 
 @interface MOContactManager : NSObject <MOManager>
+@property(nonatomic, readonly) MOCoreDataStack *coreDataStack;
+@property(nonatomic, readonly) id <MONetworking> networkingManager;
+
 - (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack
                     networkingManager:(id <MONetworking>)networkingManager;
 

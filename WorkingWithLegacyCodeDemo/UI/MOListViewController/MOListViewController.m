@@ -3,22 +3,23 @@
 #import "MOContactDataGroup.h"
 #import "MOSimpleTableViewFetchedResultsControllerDelegate.h"
 #import "MOContactData.h"
+#import "MOManager.h"
 #import "MOCoreDataStack.h"
 
 @interface MOListViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
-@property(nonatomic, readonly) MOCoreDataStack* coreDataStack;
+@property(nonatomic, readonly) id <MOManager> manager;
 @end
 
 @implementation MOListViewController {
 
 }
 
-- (instancetype)initWithCoreDataStack:(MOCoreDataStack *)coreDataStack {
+- (instancetype)initWithManager:(id <MOManager>)manager {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        _coreDataStack = coreDataStack;
+        _manager = manager;
     }
 
     return self;
@@ -46,7 +47,7 @@
 }
 
 - (void)setupFetchedResultsController {
-    NSManagedObjectContext *context = self.coreDataStack.mainContext;
+    NSManagedObjectContext *context = self.manager.coreDataStack.mainContext;
 
     NSArray *groups = [context fetchObjectsWithEntityName:NSStringFromClass([MOContactDataGroup class])
                                                 predicate:nil
